@@ -42,9 +42,12 @@ You can test the same API both inside the app and via **Postman**.
 
 ### Backend (Node.js + Express + MongoDB)
 ```bash
-cd backend
 npm install
 node server.js
+```
+```bash
+brew services start mongodb-community
+mongosh
 ```
 ---
 ➡️ API will run at: http://127.0.0.1:3000
