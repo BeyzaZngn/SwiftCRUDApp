@@ -34,28 +34,7 @@ You can test the same API both inside the app and via **Postman**.
 
 ## 📂 Project Structure
 
-SwiftCRUDApp/
-│
-├─ iOS/
-│  ├─ App/
-│  │  ├─ AppDelegate.swift
-│  │  └─ SceneDelegate.swift
-│  ├─ Models/
-│  │  └─ Post.swift
-│  ├─ Services/
-│  │  ├─ NetworkManager.swift
-│  │  └─ APIService.swift
-│  ├─ ViewModels/
-│  │  └─ PostsViewModel.swift
-│  └─ Views/
-│     ├─ PostsViewController.swift
-│     ├─ AddPostViewController.swift
-│     └─ EditPostViewController.swift
-│
-└─ backend/
-├─ server.js
-├─ package.json
-└─ node_modules/
+<img src="screenshots/design.png" alt="Project Structure" width="200"/>
 
 ---
 
@@ -76,10 +55,10 @@ iOS (Swift App)
 
 ## 🧪 Postman API Testing
 
-**GET – List all posts
+# GET – List all posts
 GET http://127.0.0.1:3000/posts
 
-**POST – Create a new post
+# POST – Create a new post
 POST http://127.0.0.1:3000/posts
 Body (raw JSON):
 {
@@ -88,7 +67,7 @@ Body (raw JSON):
   "userId": 1
 }
 
-**PUT – Update a post
+# PUT – Update a post
 PUT http://127.0.0.1:3000/posts/<id>
 Body (raw JSON):
 {
@@ -96,5 +75,5 @@ Body (raw JSON):
   "body": "Updated Content"
 }
 
-**DELETE – Remove a post
+# DELETE – Remove a post
 DELETE http://127.0.0.1:3000/posts/<id>
