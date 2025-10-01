@@ -52,12 +52,12 @@ iOS (Swift App)
 	1.	Open SwiftCRUDApp.xcodeproj in Xcode
 	2.	Run on simulator (⌘R)
 	3.	The app will load posts from the backend
-
+---
 # ✍🏻 Postman API Testing
-
+---
 ## GET – List all posts
 GET http://127.0.0.1:3000/posts
-
+---
 ## POST – Create a new post
 POST http://127.0.0.1:3000/posts
 Body (raw JSON):
@@ -66,7 +66,7 @@ Body (raw JSON):
   "body": "Hello World",
   "userId": 1
 }
-
+---
 ## PUT – Update a post
 PUT http://127.0.0.1:3000/posts/<id>
 Body (raw JSON):
@@ -74,6 +74,6 @@ Body (raw JSON):
   "title": "Updated Title",
   "body": "Updated Content"
 }
-
+---
 ## DELETE – Remove a post
 DELETE http://127.0.0.1:3000/posts/<id>
