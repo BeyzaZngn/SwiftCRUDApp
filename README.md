@@ -46,20 +46,21 @@ cd backend
 npm install
 node server.js
 ```
+---
 ➡️ API will run at: http://127.0.0.1:3000
+📱 iOS (Swift App)
+- **Open SwiftCRUDApp.xcodeproj in Xcode
+- **Run on simulator
+- **The app will load posts from the backend
+---
 
-iOS (Swift App)
-	1.	Open SwiftCRUDApp.xcodeproj in Xcode
-	2.	Run on simulator (⌘R)
-	3.	The app will load posts from the backend
----
 # ✍🏻 Postman API Testing
----
+
 ## GET – List all posts
-GET http://127.0.0.1:3000/posts
+**GET http://127.0.0.1:3000/posts
 ---
 ## POST – Create a new post
-POST http://127.0.0.1:3000/posts
+**POST http://127.0.0.1:3000/posts
 Body (raw JSON):
 {
   "title": "New Post",
@@ -68,7 +69,7 @@ Body (raw JSON):
 }
 ---
 ## PUT – Update a post
-PUT http://127.0.0.1:3000/posts/<id>
+**PUT http://127.0.0.1:3000/posts/<id>
 Body (raw JSON):
 {
   "title": "Updated Title",
@@ -76,4 +77,4 @@ Body (raw JSON):
 }
 ---
 ## DELETE – Remove a post
-DELETE http://127.0.0.1:3000/posts/<id>
+**DELETE http://127.0.0.1:3000/posts/<id>
