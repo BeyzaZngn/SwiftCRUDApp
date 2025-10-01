@@ -48,33 +48,34 @@ node server.js
 ```
 ---
 ➡️ API will run at: http://127.0.0.1:3000
+
 📱 iOS (Swift App)
-- **Open SwiftCRUDApp.xcodeproj in Xcode
-- **Run on simulator
-- **The app will load posts from the backend
+- Open SwiftCRUDApp.xcodeproj in Xcode
+- Run on simulator
+- The app will load posts from the backend
 ---
 
 # ✍🏻 Postman API Testing
 
-## GET – List all posts
-**GET http://127.0.0.1:3000/posts
----
-## POST – Create a new post
-**POST http://127.0.0.1:3000/posts
+GET – List all posts
+GET http://127.0.0.1:3000/posts
+
+POST – Create a new post
+POST http://127.0.0.1:3000/posts
 Body (raw JSON):
 {
   "title": "New Post",
   "body": "Hello World",
   "userId": 1
 }
----
-## PUT – Update a post
-**PUT http://127.0.0.1:3000/posts/<id>
+
+PUT – Update a post
+PUT http://127.0.0.1:3000/posts/<id>
 Body (raw JSON):
 {
   "title": "Updated Title",
   "body": "Updated Content"
 }
----
-## DELETE – Remove a post
-**DELETE http://127.0.0.1:3000/posts/<id>
+
+DELETE – Remove a post
+DELETE http://127.0.0.1:3000/posts/<id>
